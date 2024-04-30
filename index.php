@@ -8,12 +8,12 @@
 <body>
     
 
-    <form action="paragrafo.php">
-        <input placeholder="parola" type="text">
-        <input placeholder="parola da censurare" type="text">
+    <form action="paragrafo.php" method="GET">
+       
+        <input name="paragrafo" placeholder="testo" type="text">
+        <input name="censura" placeholder="parola censurata" type="text">
 
         <button type="submit">Invia</button>
-
 
     </form>
     

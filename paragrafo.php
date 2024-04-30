@@ -1,3 +1,9 @@
+<?php
+$paragrafo= $_GET['paragrafo'];
+$censura = $_GET['censura'];
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +13,12 @@
 </head>
 <body>
      
-
-     <p> </p>
+    <p>
+        TESTO: <b><?php echo $paragrafo; ?></b>   <?php echo strlen($paragrafo); ?>           
+    </p>
     
+    <p>
+        TESTO CON CENSURA: <b><?php echo str_replace($censura, '***', $paragrafo); ?></b> <?php echo strlen($paragrafo); ?>
+    </p>
 </body>
 </html>
